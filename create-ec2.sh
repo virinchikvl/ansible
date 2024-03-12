@@ -3,7 +3,7 @@
 NAMES=("Mongodb" "Cart" "Users")
 INSTANCE_TYPE=""
 SECURITY_GROUP="sg-0aa143e518dfb2e87"
-IMAGE_ID="0f3c7d07486cad139"
+IMAGE_ID="ami-0f3c7d07486cad139"
 for i in "${NAMES[@]}"
 do 
 		if [[ $i == "mongodb" || $i == "mysql" ]]
