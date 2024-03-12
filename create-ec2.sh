@@ -11,7 +11,8 @@ do
 				INSTANCE_TYPE="t3.medium"
 				else
 				INSTANCE_TYPE="t2.micro"
-		  echo " creating  $i instance" 
+        fi       
+		echo " creating  $i instance" 
 		    IP_ADDRESS=$(aws ec2 run-instances --image-id ami  $IMAGE_ID --instance-type $INSTANCE_TYPE  --security-group-ids sg-0aa143e518dfb2e87 |  jq -r '.Instances[0].PrivateIpAddress' )
-		 echo " created  $i instance : $IP_ADDRESS" 
+		echo " created  $i instance : $IP_ADDRESS" 
 done
