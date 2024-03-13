@@ -10,4 +10,4 @@
   tasks:
   - name: learning devops
     ansible.builtin.debug:
-     mgs: "hello im learing {{COURSE}} trainer is {{TRAINER}} and the duration is {{DURATION}}"
+     msg: "hello im learing {{COURSE}} trainer is {{TRAINER}} and the duration is {{DURATION}}"
