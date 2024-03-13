@@ -1,13 +1,12 @@
 ---
 - name:
-   hosts: mongodb
-   
-   vars:
-    COURSE: devops with aws
-	  DURATION: 3months
-	  TRAINER: virinchi
-	  
-	tasks:
-	 - name: devops course
-	   ansible.builtin.debug:
-	   mes: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
+    hosts: mongodb
+    vars:
+      COURSE: devops with aws
+      DURATION: 3months
+      TRAINER: virinchi
+    tasks:
+      - name: devops course
+        ansible.builtin.debug: null
+        mes: Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is
+          {{DURATION}}
