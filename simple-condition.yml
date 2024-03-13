@@ -1,0 +1,9 @@
+- name: create user roboshop
+  hosts: localhost
+  vars:
+    NAME: Devops1
+  tasks:
+   - name: run this if name is Devops
+     ansible.builtin.debug:
+       msg: "hello {{NAME}}" 
+     when: NAME == "Devops"
