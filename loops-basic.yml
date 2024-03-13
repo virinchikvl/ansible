@@ -2,9 +2,9 @@
   hosts: localhost
   tasks:
     - name: install packages
-	     ansible.builtin.yum:
-		     name: {{item}}
-			 state: installed
+	    ansible.builtin.yum:
+		    name: {{item}}
+			  state: installed
 	    loop:
 	    - nginx
 		  - postmap
