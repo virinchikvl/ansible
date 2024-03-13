@@ -1,28 +1,13 @@
-- name: variables in playbook
-  hosts: mongodb
-  
-  vars:
-	  COURSE: AWS WITH DevOps
-	  DURATION: 3MONTHS
-	  TRAINER: VIRINCHI
-  tasks:
-  - name: devopsclass
-	  ansible.builtin.debug:
-	    mes: "Hello , im learning {{COURSE}} , trainer is {{TRAINER}} duration is {{DURATION}}" 
-
-
-
-- name: variables in ansible
-  hosts: mongodb
-  # This is Play level variables, map
-  vars:
-    COURSE: DevOps with AWS
-    TRAINER: Sivakumar
-    DURATION: 110HRS
-  tasks:
-  - name: print hello world
-    ansible.builtin.debug:
-      msg: "Hello, I am learning Ansible"
-  - name: print variables
-    ansible.builtin.debug:
-      msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
+---
+- name:
+   hosts: mongodb
+   
+   vars:
+      COURSE: devops with aws
+	  DURATION: 3months
+	  TRAINER: virinchi
+	  
+	tasks:
+	 - name: devops course
+	    ansible.builtin.debug:
+		   mes: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
