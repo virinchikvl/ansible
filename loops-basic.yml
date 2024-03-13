@@ -1,5 +1,5 @@
 - name: creating roboshop user
-   hosts: localhost
+  hosts: localhost
    tasks:
     - name: install packages
 	     ansible.builtin.yum:
