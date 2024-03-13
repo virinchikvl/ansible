@@ -9,4 +9,4 @@
   tasks
   - name: devopsclass
 	  ansible.builtin.debug:
-	    mes: "Hello , im learning {{COURSE}} , trainer is {{TRAINER}} duration is {{DURATION}}   
+	    mes: "Hello , im learning {{COURSE}} , trainer is {{TRAINER}} duration is {{DURATION}}" 
