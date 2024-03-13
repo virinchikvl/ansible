@@ -1,12 +1,11 @@
 - name: installing packags
-  host: localhost
+  host: webservers
   become: yes
   tasks:
    - name: install package
      ansible.builtin.debug:
        name: {{item}}
        state: installed 
-     loop
+     loop:
      - nginx
      - postmap
-       
