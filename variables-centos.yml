@@ -2,13 +2,12 @@
 - name: learning devops
   hosts: mongodb
 
-vars: 
- DURATION: 3months
- COURSE: Devops with aws
- TRAINER: Virinchi
+  vars: 
+   DURATION: 3months
+   COURSE: Devops with aws
+   TRAINER: Virinchi
 
-tasks:
-- name: learning devops
-  ansible.builtin.debug:
-   mgs: "hello im learing {{COURSE}}", trainer is {{TRAINER}} and the duration is {{DURATION}}"
-   
+  tasks:
+  - name: learning devops
+    ansible.builtin.debug:
+     mgs: "hello im learing {{COURSE}}", trainer is {{TRAINER}} and the duration is {{DURATION}}"
