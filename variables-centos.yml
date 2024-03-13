@@ -3,10 +3,10 @@
   become: yes
   
   vars:
-	COURSE: AWS WITH DevOps
-	DURATION: 3MONTHS
-	TRAINER: VIRINCHI
+	  COURSE: AWS WITH DevOps
+	  DURATION: 3MONTHS
+	  TRAINER: VIRINCHI
   tasks
   - name: devopsclass
-	 ansible.builtin.debug:
-	 mes: "Hello , im learning {{COURSE}} , trainer is {{TRAINER}} duration is {{DURATION}}   
+	  ansible.builtin.debug:
+	  mes: "Hello , im learning {{COURSE}} , trainer is {{TRAINER}} duration is {{DURATION}}   
