@@ -1,7 +1,7 @@
 #check if user exists or not
 
 - name: creating roboshop user
-   hosts: localhost
+  hosts: localhost
   tasks:
    - name: check if roboshop user exist or not 
       ansible.builtin.command: id roboshop
