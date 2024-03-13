@@ -1,5 +1,5 @@
 - name: installing packags
-  host: webservers
+  host: localhost
   become: yes
   tasks:
    - name: install package
