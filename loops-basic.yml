@@ -1,12 +1,12 @@
-- name: creating roboshop user
-  hosts: localhost
+- name: installing packags
+  host: localhost
   become: yes
   tasks:
-  - name: install packages
-	  ansible.builtin.yum:
-		  name: {{item}}
-			state: installed
-	  loop:
-	  - nginx
-		- postmap
-#this is for installation
+   - name: install package
+     ansible.builtin.debug:
+       name: {{item}}
+       state: installed 
+     loop
+     - nginx
+     - postmap
+       
