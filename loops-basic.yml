@@ -1,9 +1,9 @@
 - name: installing packags
-  hosts: localhost
+  hosts: mongodb
   become: yes
   tasks:
    - name: install package
-     ansible.builtin.debug:
+     ansible.builtin.yum:
        name: "{{item}}"
        state: installed 
      loop:
