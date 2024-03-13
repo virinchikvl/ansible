@@ -1,12 +1,14 @@
 ---
-- name: variables in ansible
+- name: learning devops
   hosts: mongodb
-  
-  vars:
-    COURSE: devops with aws
-    DURATION: 3months
-    TRAINER: virinchi
-	tasks:
-  - name: devops course
-    ansible.builtin.debug: null
-      msg: Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
+
+vars: 
+ DURATION: 3months
+ COURSE: Devops with aws
+ TRAINER: Virinchi
+
+tasks:
+- name: learning devops
+  ansible.builtin.debug:
+   mgs: "hello im learing {{COURSE}}", trainer is {{TRAINER}} and the duration is {{DURATION}}"
+   
