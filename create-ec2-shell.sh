@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAMES=("Mongodb" "Cart" "Users")
+NAMES=("Mongodb" "Cart")
 INSTANCE_TYPE=""
 SECURITY_GROUP="sg-0aa143e518dfb2e87"
 IMAGE_ID="ami-0f3c7d07486cad139"
